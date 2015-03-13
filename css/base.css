@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #EEE;
+}
+
+.top, .bottom {
+	height: 25%;
+}
+
+.main-container {
+	height: auto;
+	text-align: center;
+}
+
+.networks {
+	text-align: center;
+}
+
+.networks li {
+	display: inline;
+	padding: 0 20px;
+}
+
+.networks a {
+	text-decoration: none;
+}
+
+.networks img {
+	width: auto;
+	height: 50px;	
+}
