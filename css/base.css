@@ -5,6 +5,7 @@ html, body {
 
 body {
 	background: #EEE;
+	font-family: monospace;
 }
 
 .top, .bottom {
@@ -16,21 +17,138 @@ body {
 	text-align: center;
 }
 
+header h1 {
+	font-size: 18pt;
+	font-weight: bold;
+	color: black;
+}
+
+header h2 {
+	font-size: 14pt;
+	margin: 10px 0;
+	color: #444;
+}
+
+section {
+	display: inline;
+}
+
+	section h2 {
+		display: inline-block;
+		font-weight: bold;
+		font-size: 12pt;
+		background-color: #444;
+		color: white;
+		padding: 5px;
+		border-radius: 5px;
+	}
+
+section.financial,
+section.all-networks {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+section.professional h2,
+section.social h2 {
+	width: 1em;
+	word-wrap: break-word;
+	vertical-align: middle;
+	margin: -4px;
+}
+
+section.professional h2 {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+section.social h2 {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+section.financial h2,
+section.all-networks h2 {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
 .networks {
 	text-align: center;
-	padding-top: 10px;
+	padding: 5px 0;
+	border: 2px solid #444;
+	border-radius: 5px;
 }
 
-.networks li {
-	display: inline;
-	padding: 0 10px;
+	.networks li {
+		display: inline;
+	}
+
+	.networks a {
+		text-decoration: none;
+	}
+
+	.networks img {
+		width: auto;
+		height: 45px;
+		padding: 0 5px;
+	}
+	
+.networks.all {
+	margin-top: 10px;
+	border-left: none;
+	border-right: none;
 }
 
-.networks a {
-	text-decoration: none;
+	.networks.all img {
+		height: 60px;
+		padding: 5px;
+	}
+
+.gravatar {
+	margin: 5px;
+	vertical-align: middle;
+	border: 2px solid #444;
+	border-radius: 150px;
+}
+	
+.networks.professional,
+.networks.social {
+	display: inline-block;
+	margin: -4px;
+	padding: 0 5px;
+	vertical-align: middle;
 }
 
-.networks img {
-	width: auto;
-	height: 50px;	
+	.networks.professional li,
+	.networks.social li {
+		display: list-item;
+		padding: 5px 0;
+	}
+
+.networks.financial {
+	display: inline-block;
+}
+
+@media only screen and (min-width: 481px) {
+	section.all-networks {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	section.professional,
+	section.social,
+	section.financial {
+		display: none;
+	}
+	
+	.top {
+		height: 10%;
+	}
+	
+	.bottom {
+		display: none;
+	}
 }
