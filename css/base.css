@@ -15,6 +15,7 @@ body {
 .main-container {
 	height: auto;
 	text-align: center;
+	padding: 0 0 50px 0;
 }
 
 header {
@@ -58,8 +59,13 @@ section.financial,
 section.all-networks {
 	display: block;
 	text-align: center;
-	margin-bottom: 50px;
 }
+
+	section.financial h2,
+	section.all-networks h2 {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 
 section.professional h2,
 section.social h2 {
@@ -77,12 +83,6 @@ section.professional h2 {
 section.social h2 {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-}
-
-section.financial h2,
-section.all-networks h2 {
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
 }
 
 .networks {
