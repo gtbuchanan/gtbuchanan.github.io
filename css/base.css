@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-	background: #EEE;
+	background: #B6C0C4;
 	font-family: monospace;
 }
 
@@ -86,6 +86,7 @@ section.social h2 {
 }
 
 .networks {
+	background: #EEE;
 	text-align: center;
 	padding: 5px 0;
 	border: 2px solid #444;
