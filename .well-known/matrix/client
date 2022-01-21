@@ -1,0 +1,19 @@
+{
+    "m.homeserver": {
+        "base_url": "https://matrix.taylorbuchanan.com"
+    },
+    "m.identity_server": {
+        "base_url": "https://matrix.taylorbuchanan.com"
+    },
+    "m.integrations": {
+        "managers": [
+            {
+                "api_url": "https://dimension.taylorbuchanan.com/api/v1/scalar",
+                "ui_url": "https://dimension.taylorbuchanan.com/riot"
+            }
+        ]
+    },
+    "im.vector.riot.jitsi": {
+        "preferredDomain": "meet.taylorbuchanan.com"
+    }
+}
